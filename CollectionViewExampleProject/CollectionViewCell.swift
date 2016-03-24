@@ -11,6 +11,10 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var oldPriceLabel: UILabel!
+    @IBOutlet var currentPrice: UILabel!
+    @IBOutlet var currency: UILabel!
+    @IBOutlet var dressImageView: ImageView!
+    @IBOutlet var likeButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

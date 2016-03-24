@@ -8,37 +8,96 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="CollectionViewExampleProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="107" height="93"/>
+            <rect key="frame" x="0.0" y="0.0" width="284" height="236"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="107" height="93"/>
+                <rect key="frame" x="0.0" y="0.0" width="284" height="236"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQ7-Z3-OXr">
-                        <rect key="frame" x="0.0" y="0.0" width="107" height="93"/>
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="236"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-fz-G1l">
-                                <rect key="frame" x="32" y="36" width="42" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="smV-yE-zTl" customClass="ImageView" customModule="CollectionViewExampleProject" customModuleProvider="target">
+                                <rect key="frame" x="22" y="24" width="240" height="130"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJS-bV-LzJ">
+                                <rect key="frame" x="58" y="203" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3GM-Ib-UsZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-fz-G1l">
+                                <rect key="frame" x="8" y="203" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qMT-JQ-mWa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mX4-0F-fve">
+                                <rect key="frame" x="240" y="191" width="44" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="Ut2-JT-V85"/>
+                                    <constraint firstAttribute="height" constant="45" id="aZn-YL-UF7"/>
+                                </constraints>
+                                <state key="normal" image="add-small"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mJS-bV-LzJ" secondAttribute="bottom" constant="12" id="0f4-ug-Wbz"/>
+                            <constraint firstItem="mX4-0F-fve" firstAttribute="top" secondItem="smV-yE-zTl" secondAttribute="bottom" constant="37" id="4Yg-mt-Kut"/>
+                            <constraint firstItem="mX4-0F-fve" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mJS-bV-LzJ" secondAttribute="trailing" constant="8" id="CVM-rQ-Nps"/>
+                            <constraint firstAttribute="trailing" secondItem="smV-yE-zTl" secondAttribute="trailing" constant="22" id="KSt-sp-RAS"/>
+                            <constraint firstItem="mX4-0F-fve" firstAttribute="top" secondItem="smV-yE-zTl" secondAttribute="bottom" constant="46" id="Ndu-EM-bWf"/>
+                            <constraint firstAttribute="trailing" secondItem="mX4-0F-fve" secondAttribute="trailing" constant="8" id="Xhg-Or-td5"/>
+                            <constraint firstItem="mJS-bV-LzJ" firstAttribute="leading" secondItem="tvZ-fz-G1l" secondAttribute="trailing" constant="8" id="YVQ-X4-8GG"/>
+                            <constraint firstAttribute="bottom" secondItem="mJS-bV-LzJ" secondAttribute="bottom" constant="8" id="Yeu-BZ-L1x"/>
+                            <constraint firstAttribute="bottom" secondItem="tvZ-fz-G1l" secondAttribute="bottom" constant="12" id="bfq-bM-O6b"/>
+                            <constraint firstAttribute="bottom" secondItem="tvZ-fz-G1l" secondAttribute="bottom" constant="8" id="hEu-kf-g3k"/>
+                            <constraint firstItem="smV-yE-zTl" firstAttribute="leading" secondItem="hQ7-Z3-OXr" secondAttribute="leading" constant="22" id="idz-R7-vAS"/>
+                            <constraint firstItem="smV-yE-zTl" firstAttribute="top" secondItem="hQ7-Z3-OXr" secondAttribute="top" constant="24" id="lD0-Qo-6Mg"/>
+                            <constraint firstAttribute="trailing" secondItem="mX4-0F-fve" secondAttribute="trailing" id="mCg-6R-WH0"/>
+                            <constraint firstItem="tvZ-fz-G1l" firstAttribute="leading" secondItem="hQ7-Z3-OXr" secondAttribute="leading" constant="8" id="nAE-zt-aVx"/>
+                            <constraint firstAttribute="bottom" secondItem="mX4-0F-fve" secondAttribute="bottom" constant="3" id="p0X-Sp-phy"/>
+                            <constraint firstItem="tvZ-fz-G1l" firstAttribute="leading" secondItem="hQ7-Z3-OXr" secondAttribute="leading" constant="8" id="q0I-K3-MQx"/>
+                            <constraint firstItem="mJS-bV-LzJ" firstAttribute="leading" secondItem="tvZ-fz-G1l" secondAttribute="trailing" constant="8" id="r6a-z9-ktw"/>
+                            <constraint firstAttribute="bottom" secondItem="mX4-0F-fve" secondAttribute="bottom" id="wAq-Tw-Z7x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hEu-kf-g3k"/>
+                                <exclude reference="nAE-zt-aVx"/>
+                                <exclude reference="YVQ-X4-8GG"/>
+                                <exclude reference="Yeu-BZ-L1x"/>
+                                <exclude reference="Ndu-EM-bWf"/>
+                                <exclude reference="Xhg-Or-td5"/>
+                                <exclude reference="p0X-Sp-phy"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="hQ7-Z3-OXr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BRb-Wz-v1k"/>
-                <constraint firstItem="hQ7-Z3-OXr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GGQ-PN-JHm"/>
-                <constraint firstAttribute="trailing" secondItem="hQ7-Z3-OXr" secondAttribute="trailing" id="eqi-Jp-1mV"/>
-                <constraint firstAttribute="bottom" secondItem="hQ7-Z3-OXr" secondAttribute="bottom" id="rGk-Rt-tnI"/>
+                <constraint firstAttribute="bottom" secondItem="hQ7-Z3-OXr" secondAttribute="bottom" id="DGI-Fh-3xl"/>
+                <constraint firstItem="hQ7-Z3-OXr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lzv-Xk-fhc"/>
+                <constraint firstAttribute="trailing" secondItem="hQ7-Z3-OXr" secondAttribute="trailing" id="axc-zk-jmb"/>
+                <constraint firstItem="hQ7-Z3-OXr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o2Z-Ij-b3X"/>
             </constraints>
-            <size key="customSize" width="107" height="93"/>
+            <size key="customSize" width="284" height="236"/>
             <connections>
+                <outlet property="currentPrice" destination="mJS-bV-LzJ" id="Cmm-Y6-512"/>
+                <outlet property="dressImageView" destination="smV-yE-zTl" id="HGJ-nD-HB7"/>
                 <outlet property="oldPriceLabel" destination="tvZ-fz-G1l" id="pLQ-Lw-a16"/>
             </connections>
-            <point key="canvasLocation" x="202.5" y="431.5"/>
+            <point key="canvasLocation" x="291" y="503"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="add-small" width="20" height="20"/>
+    </resources>
 </document>

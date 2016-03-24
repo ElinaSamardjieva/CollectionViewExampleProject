@@ -12,8 +12,44 @@ private let _sharedInstance = DataManager()
 
 class DataManager: NSObject {
     
-    // var dataArray = [Product(oldPrice: "5", currentPrice: 10, currency: "Euro", isLiked: true, imageUrl: "URL FOR IMAGE")]
-    var dataArray = [Product(oldPrice: "5"), Product(oldPrice: "50"), Product(oldPrice: "50"), Product(oldPrice: "50")]
+     var dataArray =
+    [Product(
+        oldPrice: "5",
+        currentPrice: "10",
+        currency: "Euro",
+        isLiked: true,
+        imageURL: "http://resources.wepushbuttons.com.au/wp-content/uploads/sites/2/2012/03/twitter-logo-small.jpg"),
+        
+        Product(
+            oldPrice: "4",
+            currentPrice: "10",
+            currency: "Euro",
+            isLiked: true,
+            imageURL: "http://resources.wepushbuttons.com.au/wp-content/uploads/sites/2/2012/03/twitter-logo-small.jpg"),
+        
+        Product(
+            oldPrice: "4",
+            currentPrice: "10",
+            currency: "Euro",
+            isLiked: true,
+            imageURL: "http://resources.wepushbuttons.com.au/wp-content/uploads/sites/2/2012/03/twitter-logo-small.jpg"),
+        
+        Product(
+            oldPrice: "4",
+            currentPrice: "10",
+            currency: "Euro",
+            isLiked: true,
+            imageURL: "http://resources.wepushbuttons.com.au/wp-content/uploads/sites/2/2012/03/twitter-logo-small.jpg"),
+        
+        Product(
+            oldPrice: "4",
+            currentPrice: "10",
+            currency: "Euro",
+            isLiked: true,
+            imageURL: "http://resources.wepushbuttons.com.au/wp-content/uploads/sites/2/2012/03/twitter-logo-small.jpg")]
+    
+    
+//    var dataArray = [Product(oldPrice: "5"), Product(oldPrice: "50"), Product(oldPrice: "50"), Product(oldPrice: "50"), Product(oldPrice: "100"), Product(oldPrice: "50"), Product(oldPrice: "50")]
     
     
     class var sharedManager: DataManager {

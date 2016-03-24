@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="w8u-P2-6vC" secondAttribute="trailing" constant="-20" id="56I-Pn-oOT"/>
+                            <constraint firstItem="w8u-P2-6vC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="HSU-UW-iCz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w8u-P2-6vC" secondAttribute="bottom" id="Kvg-5M-91Y"/>
                             <constraint firstItem="w8u-P2-6vC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="m46-Yn-tMD"/>
                             <constraint firstItem="w8u-P2-6vC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uEM-hy-5BV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w8u-P2-6vC" secondAttribute="bottom" constant="142" id="wdV-Pa-y51"/>
@@ -45,10 +48,12 @@
                                 <exclude reference="w8u-P2-6vC"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Kvg-5M-91Y"/>
+                                <exclude reference="wdV-Pa-y51"/>
                                 <exclude reference="56I-Pn-oOT"/>
+                                <exclude reference="HSU-UW-iCz"/>
                                 <exclude reference="m46-Yn-tMD"/>
                                 <exclude reference="uEM-hy-5BV"/>
-                                <exclude reference="wdV-Pa-y51"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -56,10 +61,12 @@
                                 <include reference="w8u-P2-6vC"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Kvg-5M-91Y"/>
+                                <exclude reference="wdV-Pa-y51"/>
                                 <include reference="56I-Pn-oOT"/>
+                                <include reference="HSU-UW-iCz"/>
                                 <include reference="m46-Yn-tMD"/>
                                 <include reference="uEM-hy-5BV"/>
-                                <include reference="wdV-Pa-y51"/>
                             </mask>
                         </variation>
                     </view>
